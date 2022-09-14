@@ -1,3 +1,5 @@
+[![Spring Boot Checkstyle](https://github.com/danielso2007/spring-boot-checkstyle/actions/workflows/maven.yml/badge.svg)](https://github.com/danielso2007/spring-boot-checkstyle/actions/workflows/maven.yml)
+
 # Visão Geral
 
 Checkstyle é uma ferramenta de código aberto que verifica o código em relação a um conjunto configurável de regras. Checkstyle é uma ferramenta de desenvolvimento para ajudar programadores a escrever código Java que segue um padrão de codificação. Ele automatiza o processo de verificação do código Java para poupar os desenvolvedores dessa tarefa chata (mas importante). Isso o torna ideal para projetos que desejam impor um padrão de codificação.
