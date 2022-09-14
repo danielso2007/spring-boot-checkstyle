@@ -69,7 +69,7 @@ Também podemos executar apenas o objetivo de verificação do plugin usando `./
 
 O comando `./mvnw clean verify` também pode ser executado para verificar violação dos padrões de codificação.
 
-# Projeto de Exemplo
+# Projeto
 
 Casos queira rodar o projeto, execute `./mvnw spring-boot:run`.
 
