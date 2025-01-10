@@ -22,7 +22,7 @@ on:
       - v*
 
 jobs:
-  Checktyle:
+  CheckStyle:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
@@ -37,7 +37,7 @@ jobs:
         run: |
           mvn checkstyle:check
   Test:
-    needs: Checkstyle
+    needs: CheckStyle
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
