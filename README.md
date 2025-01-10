@@ -27,13 +27,6 @@ Portanto, aplicar o code style é uma ação simples que reduz o "atrito" e cont
 
 Para adicionar Checkstyle a um projeto, precisamos adicionar o plugin na seção de build do `pom.xml`:
 
-### Properties do maven:
-
-```xml
-<maven-checkstyle-plugin-version>3.2.0</maven-checkstyle-plugin-version>
-<local-config-checkstyle>config/checkstyle.xml</local-config-checkstyle>
-```
-
 ### Plugin:
 
 ```xml
@@ -43,12 +36,35 @@ Para adicionar Checkstyle a um projeto, precisamos adicionar o plugin na seção
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>${maven-checkstyle-plugin-version}</version>
+        <version>3.6.0</version>
         <configuration>
             <configLocation>${local-config-checkstyle}</configLocation>
         </configuration>
         <executions>
             <execution>
+                <id>validate</id>
+                <phase>validate</phase>
+                <goals>
+                    <goal>check</goal>
+                </goals>
+            </execution>
+            <execution>
+                <id>compile</id>
+                <phase>compile</phase>
+                <goals>
+                    <goal>check</goal>
+                </goals>
+            </execution>
+            <execution>
+                <id>test-compile</id>
+                <phase>test-compile</phase>
+                <goals>
+                    <goal>check</goal>
+                </goals>
+            </execution>
+            <execution>
+                <id>verify</id>
+                <phase>verify</phase>
                 <goals>
                     <goal>check</goal>
                 </goals>
