@@ -37,7 +37,7 @@ jobs:
         run: |
           mvn checkstyle:check
   Test:
-    needs: Checktyle
+    needs: Checkstyle
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
