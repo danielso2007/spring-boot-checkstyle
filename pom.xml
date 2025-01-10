@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example.checkstyle</groupId>
     <artifactId>spring-boot-checkstyle</artifactId>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
     <name>spring-boot-checkstyle</name>
     <description>Demo project for Spring Boot checkstyle</description>
 
